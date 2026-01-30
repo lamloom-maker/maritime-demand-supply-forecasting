@@ -1,93 +1,151 @@
-# Maritime Demand & Supply Forecasting
+Maritime Demand & Supply Forecasting
 
-This repository contains my MSc capstone project focused on forecasting
-maritime demand and supply using statistical, machine learning, and deep
-learning approaches.
+This repository contains my MSc capstone project focused on forecasting maritime demand and supply using statistical, machine learning, and deep learning approaches, with an emphasis on explainability and real-world decision support.
 
----
+Project Overview
 
-## Project Overview
-The objective of this project is to analyze global and regional maritime
-trade data and build forecasting models that support strategic
-decision-making in the shipping and logistics sector.
+Maritime trade plays a critical role in the global economy, carrying more than 80% of world trade volumes. Accurate forecasting of maritime demand and supply is essential for strategic planning, capacity management, and policy-making in the shipping and logistics sector.
 
-The project compares traditional time-series models with advanced
-machine learning and deep learning techniques to evaluate their
-performance under different data conditions.
+This project aims to develop and compare forecasting models for maritime demand and supply at both global and regional (Saudi Arabia) levels, using time-series, machine learning, and deep learning techniques.
 
----
+Objectives
 
-## Data
-- Source: UNCTAD (United Nations Conference on Trade and Development)
-- Scope:
-  - Global maritime demand and supply
-  - Saudi Arabia case study
-- Metrics:
-  - Seaborne trade volumes
-  - Merchant fleet capacity (DWT)
+Analyze long-term maritime trade and fleet capacity trends
 
-⚠️ **Note:**  
-The dataset is not included in this repository due to licensing and usage
-restrictions.
+Build robust forecasting models under different data conditions
 
----
+Compare classical statistical models with advanced ML and DL approaches
 
-## Methodology
-The project follows a structured analytical workflow:
+Apply Explainable AI (XAI) techniques to improve model transparency
 
-1. Data cleaning and preprocessing  
-2. Exploratory Data Analysis (EDA)  
-3. Time-series modeling  
-4. Machine learning and deep learning modeling  
-5. Model evaluation and comparison  
-6. Explainable AI (XAI) analysis  
+Support data-driven decision-making for policymakers and industry stakeholders
 
----
+Data
 
-## Models Used
-- **ARIMA** – Statistical time-series forecasting (baseline model)
-- **XGBoost** – Machine learning regression for supply forecasting
-- **LSTM** – Deep learning model for complex temporal patterns
-- **Explainable AI (XAI)** – Model interpretation and transparency
+Source:
+United Nations Conference on Trade and Development (UNCTAD)
 
----
+Scope:
 
-## Tools & Technologies
-- Python  
-- Pandas, NumPy  
-- Statsmodels  
-- Scikit-learn  
-- XGBoost  
-- TensorFlow / Keras  
-- SHAP (Explainable AI)  
-- Jupyter Notebook  
+Global maritime demand and supply
 
----
+Saudi Arabia case study
 
-## Repository Structure
+Key Metrics:
+
+Seaborne trade volumes
+
+Merchant fleet capacity (DWT – Deadweight Tonnage)
+
+⚠️ Note:
+The dataset is not included in this repository due to licensing and usage restrictions.
+
+Methodology
+
+The project follows a structured and reproducible analytical workflow:
+
+Data cleaning and preprocessing
+
+Exploratory Data Analysis (EDA)
+
+Time-series modeling
+
+Machine learning and deep learning modeling
+
+Model evaluation and comparison
+
+Explainable AI (XAI) analysis
+
+All models are evaluated using time-based splits to preserve temporal integrity.
+
+Models Used
+ARIMA (Statistical Forecasting)
+
+Baseline time-series model
+
+Strong performance on limited historical data
+
+High interpretability
+
+XGBoost (Machine Learning)
+
+Regression-based forecasting for supply and demand
+
+Feature engineering using lagged variables and trend components
+
+Improved performance with richer datasets
+
+LSTM (Deep Learning)
+
+Captures complex temporal dependencies
+
+Suitable for long-term and nonlinear patterns
+
+Applied to extended time-series horizons
+
+Explainable AI (XAI)
+
+Residual diagnostics for ARIMA
+
+SHAP-based explanations for XGBoost
+
+Improves transparency and trust in model outputs
+
+Key Findings
+
+ARIMA performs robustly on short and limited datasets
+
+Machine learning and deep learning models outperform classical methods when longer historical data is available
+
+Explainable AI enhances interpretability and supports responsible AI deployment
+
+No single model fits all scenarios — model selection depends on data availability and use case
+
+Tools & Technologies
+
+Python
+
+Pandas, NumPy
+
+Statsmodels
+
+Scikit-learn
+
+XGBoost
+
+TensorFlow / Keras
+
+SHAP (Explainable AI)
+
+Jupyter Notebook
+
+Repository Structure
 maritime-demand-supply-forecasting/
-├── notebooks/ # Jupyter notebooks for modeling and experiments
-│ ├── ARIMA models
-│ ├── XGBoost models
-│ └── LSTM models
-├── docs/ # Research paper and supporting documents
+│
+├── notebooks/          # Modeling and experimentation notebooks
+│   ├── ARIMA models
+│   ├── XGBoost models
+│   └── LSTM models
+│
+├── docs/               # Research paper and supporting documents
+│
 ├── LICENSE
 └── README.md
 
+Applications
 
+Maritime policy and planning
 
----
+Port capacity forecasting
 
-## Key Findings
-- ARIMA performs robustly on limited and short historical data.
-- Machine learning and deep learning models demonstrate improved
-  performance when longer and richer time series are available.
-- Explainable AI enhances transparency and trust in forecasting results.
+Shipping market analysis
 
+Strategic logistics decision-making
 
+Explainable AI in time-series forecasting
 
----
+Author
 
-## Author
-**Lama Turki**  
-MSc Data Science & Analytics  
+Lama Turki
+MSc Data Science & Analytics
+Data Scientist | Analytics & Forecasting
